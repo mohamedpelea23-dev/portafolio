@@ -1,0 +1,41 @@
+:root { --max: 1000px; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #111; background: #fafbff; }
+a { color: #0b57d0; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 24px; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; max-width: var(--max); margin: 0 auto; }
+.nav a { margin-left: 16px; color: #111; }
+.nav .logo { font-weight: 800; letter-spacing: .5px; }
+
+.hero { background: #eef2ff; border-top: 1px solid #e6e8ff; border-bottom: 1px solid #e6e8ff; }
+.hero .wrap { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: center; }
+.hero h1 { font-size: 40px; margin: 0 0 8px; }
+.sub { margin: 0 0 12px; font-weight: 600; }
+.desc { max-width: 650px; line-height: 1.6; }
+.hero-foto img { width: 220px; height: auto; border-radius: 16px; border: 1px solid #e6e6e6; }
+.botones .btn { margin-right: 12px; }
+
+@media (min-width: 900px) {
+  .hero .wrap { grid-template-columns: 1.2fr .8fr; }
+}
+
+.btn { display: inline-block; background: #111; color: #fff; padding: 10px 14px; border-radius: 10px; }
+.btn:hover { opacity: .9; }
+.btn.secundario { background: #4a4a4a; }
+
+.skills h2 { margin: 8px 0 12px; }
+.pill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.pill-list li { border: 1px solid #e6e6e6; padding: 6px 10px; border-radius: 999px; background: #fff; }
+
+.grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media (min-width: 800px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+.card { background: #fff; border: 1px solid #e8e8e8; border-radius: 12px; padding: 16px; }
+.tags { color: #666; font-size: 14px; }
+
+footer { color: #666; text-align: center; }
+.perfil { margin-top: 12px; max-width: 280px; border-radius: 12px; border: 1px solid #e6e6e6; }
+
+.contacto { list-style: none; padding: 0; }
+.contacto li { margin: 8px 0; }

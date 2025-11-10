@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyectos – Santiago Remolina</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="../index.html">SR.</a>
+      <div>
+        <a aria-current="page" href="./proyectos.html">Proyectos</a>
+        <a href="./sobre-mi.html">Sobre mí</a>
+        <a href="./contacto.html">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Proyectos</h1>
+    <p>Estos son algunos ejemplos de proyectos que he realizado o en los que he colaborado:</p>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Automatización con Python</h2>
+        <p>Script para automatizar tareas de procesamiento de archivos y generación de reportes.</p>
+        <p class="tags">Python · GitHub</p>
+      </article>
+
+      <article class="card">
+        <h2>Web estática colaborativa</h2>
+        <p>Sitio web estático con HTML y CSS gestionado en GitHub (issues, ramas, PRs).</p>
+        <p class="tags">HTML · CSS · Git</p>
+      </article>
+
+      <article class="card">
+        <h2>API con Flask</h2>
+        <p>API REST básica para practicar rutas y manejo de datos en JSON.</p>
+        <p class="tags">Python · Flask</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © <span id="y"></span> Santiago Remolina
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
